@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<antlib>
+	<typedef name="substring" 
+		classname="org.osgibook.util.ant.Substring"/>
+		
+	<typedef name="replaceInString" 
+		classname="org.osgibook.util.ant.Replace"/>
+</antlib>

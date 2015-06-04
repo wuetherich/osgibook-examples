@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Event Client Bundle
+Bundle-SymbolicName: org.osgibook.eventclient
+Bundle-Version: 1.0.0
+Bundle-Activator: org.osgibook.eventclient.Activator
+Import-Package: org.osgi.framework;version="1.4.0",
+ org.osgibook.translation
+Eclipse-LazyStart: true

@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Simple Component Bundle
+Bundle-SymbolicName: org.osgibook.simplecomponent
+Bundle-Version: 1.0.0
+Service-Component: OSGI-INF/component-description.xml
+Import-Package: org.osgi.framework;version="1.4.0",
+ org.osgi.service.component;version="1.0.0"

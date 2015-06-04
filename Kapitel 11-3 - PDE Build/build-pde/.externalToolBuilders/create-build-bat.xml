@@ -1,0 +1,38 @@
+<project name="create-build-bat" default="create-build-bat" basedir=".">
+
+	<!-- declare ant-contrib -->
+	<taskdef resource="org/osgibook/util/ant/antlib.xml">
+		<classpath path="${basedir}/.externalToolBuilders" />
+	</taskdef>
+
+	<target name="create-build-bat">
+
+		<substring string="${ECLIPSE_HOME}" resultProperty="ECLIPSE_HOME_REPLACED" beginIndex="1" />
+		<replaceInString string="${WORKSPACE_LOC}" resultProperty="WORKSPACE_LOC_REPLACED" oldChar="\\" newChar="/" />
+
+		<echo>${ECLIPSE_HOME_REPLACED}</echo>
+		<echo>${WORKSPACE_LOC_REPLACED}</echo>
+
+		<delete file="${basedir}/build.bat" />
+		<delete file="${basedir}/scripts/build.properties" />
+
+		<substring string="${ECLIPSE_HOME}" resultProperty="ECLIPSE_HOME_REPLACED" beginIndex="1" />
+
+		<copy tofile="${basedir}/build.bat">
+			<fileset file="${basedir}/.externalToolBuilders/build.bat.template" />
+			<filterset>
+				<filter token="ECLIPSE_HOME" value="${ECLIPSE_HOME_REPLACED}" />
+				<filter token="WORKSPACE_LOC" value="${WORKSPACE_LOC_REPLACED}" />
+			</filterset>
+		</copy>
+
+		<copy tofile="${basedir}/scripts/build.properties">
+			<fileset file="${basedir}/.externalToolBuilders/build.properties.template" />
+			<filterset>
+				<filter token="ECLIPSE_HOME" value="${ECLIPSE_HOME_REPLACED}" />
+				<filter token="WORKSPACE_LOC" value="${WORKSPACE_LOC_REPLACED}" />
+			</filterset>
+		</copy>
+	</target>
+
+</project>

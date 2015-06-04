@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<component name="translationServiceComponent">
+	<implementation class="org.osgibook.translation.impl.TranslationServiceImpl"/>
+	<property name="translation.language" value="de"/>
+	<property name="translation.country" value="DE"/>
+	<service>
+    	<provide interface="org.osgibook.translation.TranslationService"/>
+	</service>
+	<reference name="xstreamService" 
+		interface="org.osgibook.xstream.XStreamService"
+		bind="setXStreamService"
+		unbind="unsetXStreamService"
+	/>	
+</component>

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Hello World Bundle
+Bundle-SymbolicName: org.osgibook.helloworld
+Bundle-Version: 1.0.0
+Bundle-Activator: org.osgibook.helloworld.Activator
+Import-Package: org.eclipse.osgi.framework.console;version="1.0.0",
+ org.osgi.framework;version="1.4.0",
+ org.osgi.util.tracker;version="1.3.3",
+ org.osgibook.translation
+Bundle-ClassPath: .

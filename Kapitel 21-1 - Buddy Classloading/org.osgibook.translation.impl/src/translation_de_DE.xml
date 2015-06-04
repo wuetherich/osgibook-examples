@@ -1,0 +1,12 @@
+<org.osgibook.translation.impl.MessageDictionary>
+  <entries class="hashtable">
+    <entry>
+      <string>goodbye</string>
+      <string>Tschüß OSGi-Welt sagt Bundle %s!</string>
+    </entry>
+    <entry>
+      <string>hello</string>
+      <string>Hallo OSGi-Welt sagt Bundle %s!</string>
+    </entry>
+  </entries>
+</org.osgibook.translation.impl.MessageDictionary>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<component name="helloWorldComponent">
+	<implementation class="org.osgibook.helloworld.HelloWorldComponent"/>
+    <reference name="translationService" 
+		interface="org.osgibook.translation.TranslationService"
+		bind="setTranslationService"
+		unbind="unsetTranslationService"
+		/>
+</component>

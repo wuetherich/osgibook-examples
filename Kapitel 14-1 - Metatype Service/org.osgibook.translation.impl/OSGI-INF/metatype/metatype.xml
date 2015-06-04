@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0">
+  <OCD id="org.osgibook.translation.TranslationService" name="TranslationService-Konfiguration" description="Die Konfiguration des TranslationService">
+	<AD id="translation.language" type="String" default="de" name="Sprache" description="Der Sprach-Code des TranslationService" />
+	<AD id="translation.country" type="String" default="DE" name="Land" description="Der Laender-Code des TranslationService" />
+  </OCD>	
+    <Designate pid="org.osgibook.translation.TranslationService">
+        <Object ocdref="org.osgibook.translation.TranslationService"/>
+    </Designate> 
+</metatype:MetaData>

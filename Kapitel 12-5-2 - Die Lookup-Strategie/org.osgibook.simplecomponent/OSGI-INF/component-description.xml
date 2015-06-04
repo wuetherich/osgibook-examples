@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<component name="simpleComponent" immediate="true">
+	<implementation class="org.osgibook.simplecomponent.SimpleComponent"/>
+	<service>
+    	<provide interface="org.osgibook.simplecomponent.SimpleService"/>
+	</service>
+	<reference name="translationService" 
+		interface="org.osgibook.translation.TranslationService"
+		/>
+</component>

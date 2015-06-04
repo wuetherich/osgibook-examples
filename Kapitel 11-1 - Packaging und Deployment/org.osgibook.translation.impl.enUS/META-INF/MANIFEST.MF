@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Translations (en,US) Fragment
+Bundle-SymbolicName: org.osgibook.translation.impl.enUS
+Bundle-Version: 1.0.0
+Fragment-Host: org.osgibook.translation.impl;bundle-version="1.0.0"

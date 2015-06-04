@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Translation Implementation Bundle
+Bundle-SymbolicName: org.osgibook.translation.impl
+Bundle-Version: 1.0.0
+Import-Package: org.osgibook.translation,
+ org.osgi.framework;version="1.4.0"
+Bundle-Activator: org.osgibook.translation.impl.Activator
+

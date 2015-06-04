@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<component name="helloworldServletComponent">
+	<implementation class="org.osgibook.helloworld.servlet.HelloWorldServletComponent"/>
+	<reference name="httpService" 
+		interface="org.osgi.service.http.HttpService"
+		bind="setHttpService"
+		unbind="unsetHttpService"
+		cardinality="0..n"
+		policy="dynamic"
+		/>
+</component>

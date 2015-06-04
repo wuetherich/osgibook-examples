@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Application Bundle
+Bundle-SymbolicName: org.osgibook.application
+Bundle-Version: 1.0.0
+Bundle-Activator: org.osgibook.application.Activator
+Import-Package: org.eclipse.osgi.framework.console;version="1.0.0",
+ org.osgi.framework;version="1.4.0",
+ org.osgi.service.application;version="1.0.0"

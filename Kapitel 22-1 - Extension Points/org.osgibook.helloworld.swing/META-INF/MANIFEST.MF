@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Hello World Swing Bundle
+Bundle-SymbolicName: org.osgibook.helloworld.swing;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: org.osgibook.helloworld.swing.Activator
+Import-Package: org.eclipse.core.runtime;registry=split,
+ org.eclipse.core.runtime.dynamichelpers,
+ org.eclipse.osgi.framework.console;version="1.0.0",
+ org.osgi.framework;version="1.3.0"

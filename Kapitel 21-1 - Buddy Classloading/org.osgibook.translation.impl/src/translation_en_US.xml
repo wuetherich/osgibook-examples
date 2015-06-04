@@ -1,0 +1,12 @@
+<org.osgibook.translation.internal.MessageDictionary>
+  <entries class="hashtable">
+    <entry>
+      <string>goodbye</string>
+      <string>Goodbye OSGi World from bundle %s!</string>
+    </entry>
+    <entry>
+      <string>hello</string>
+      <string>Hello OSGi World from bundle %s!</string>
+    </entry>
+  </entries>
+</org.osgibook.translation.internal.MessageDictionary>

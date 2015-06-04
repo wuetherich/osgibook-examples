@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<component name="consoleLoggerComponent">
+	<implementation class="org.osgibook.consolelogger.ConsoleLoggerComponent"/>
+	<reference name="logService" 
+		interface="org.osgi.service.log.LogReaderService"
+		bind="setLogReaderService"
+		unbind="unsetLogReaderService"
+		/>
+</component>

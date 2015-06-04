@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<component name="xstreamComponent">
+	<implementation class="org.osgibook.xstream.internal.XStreamComponent"/>
+	<service servicefactory="true">
+    	<provide interface="org.osgibook.xstream.XStreamService"/>
+	</service>
+</component>

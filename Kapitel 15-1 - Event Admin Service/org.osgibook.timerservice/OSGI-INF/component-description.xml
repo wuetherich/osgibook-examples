@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<component name="timerServiceComponent">
+	<implementation class="org.osgibook.timerservice.TimerServiceComponent"/>
+	<reference name="eventAdmin" 
+		interface="org.osgi.service.event.EventAdmin"
+		bind="setEventAdmin"
+		unbind="unsetEventAdmin"
+		/>
+</component>

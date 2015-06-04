@@ -1,0 +1,8 @@
+# das Recht, Packages zu importieren
+(org.osgi.framework.PackagePermission "*" "IMPORT")
+# das Recht, den TranslationService von der ServiceRegistry abzufragen
+(org.osgi.framework.ServicePermission "org.osgibook.translation.TranslationService" "get")
+# das Recht, den TranslationService auszufuehren
+(org.osgibook.translation.TranslationPermission "translate")
+# das Recht, einen eigenen CommandProvider zu registrieren
+(org.osgi.framework.ServicePermission "org.eclipse.osgi.framework.console.CommandProvider" "register")

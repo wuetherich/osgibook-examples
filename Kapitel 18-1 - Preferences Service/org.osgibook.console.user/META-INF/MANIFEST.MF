@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: User Admin Bundle
+Bundle-SymbolicName: org.osgibook.console.user
+Bundle-Version: 1.0.0
+Import-Package: org.eclipse.osgi.framework.console;version="1.0.0",
+ org.osgi.framework;version="1.4.0",
+ org.osgi.service.component;version="1.0.0",
+ org.osgi.service.useradmin;version="1.1.0",
+ org.osgi.service.prefs;version="1.1.0"
+Service-Component: OSGI-INF/component-description.xml

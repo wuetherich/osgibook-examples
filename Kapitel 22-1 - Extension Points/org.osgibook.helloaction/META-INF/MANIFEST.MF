@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Hello Action Plug-in
+Bundle-SymbolicName: org.osgibook.helloaction;singleton:=true
+Bundle-Version: 1.0.0

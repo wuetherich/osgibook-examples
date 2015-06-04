@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<component name="userComponent">
+	<implementation class="org.osgibook.console.user.UserComponent"/>
+	<service>
+		<provide interface="org.eclipse.osgi.framework.console.CommandProvider"/>
+	</service>
+	<reference name="userAdmin"
+		interface="org.osgi.service.useradmin.UserAdmin"
+		bind="setUserAdmin"
+		unbind="unsetUserAdmin"
+	/>
+</component>
